@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "server.js": {
+      "runtime": "nodejs16.x"
+    }
+  }
+}
