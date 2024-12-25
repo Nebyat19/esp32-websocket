@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Set up webhook endpoint
 app.use(bodyParser.json());
-app.post('/webhook', (req, res) => {
+app.get('/webhook', (req, res) => {
   console.log('Webhook received:', req.body);
   // Process the incoming data (e.g., save to database, forward to WebSocket, etc.)
   res.status(200).send('Webhook received');
